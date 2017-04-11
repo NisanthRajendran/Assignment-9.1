@@ -7,4 +7,18 @@
      *More lines of code is written in MapReduce and less lines of code is written in Pig.
      *Pig Latin code can be extended through various user defined functions that are written in Python, Java, Groovy, JavaScript, and Ruby.
      *Pig provides higher level of abstraction where as MapReduce provides lower level of abstraction.
+     *Development effort is less in pig than Mapreduce.
      
+3. What is pig engine and what is its importance?
+     *Pig engine is a component of pig that accepts the Pig Latin scripts as input and converts those scripts into MapReduce jobs.
+     *It acts as an intrepreter between MapReduce jobs and Pig latin script.
+     
+4. What are the modes of Pig execution?     
+     There are two modes of Pig execution:
+       *LOCAL MODE:       To run Pig in local mode, you need access to a single machine.
+                          All the files are installed and run from your local host and local file system.
+                          HDFS is not needed.
+                    
+       *MAPREDUCE MODE:   Here we load the data from hadoop file system using pig. 
+                          When ever a pig statement is executed,map reduce job runs on the background to perform the specified operation
+                          in the mentioned file.
